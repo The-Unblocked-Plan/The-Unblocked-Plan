@@ -1,2 +1,7 @@
-# The-Unblocked-Plan
-unblocked plan official website (make a fork!)
+<div align='center'>
+# The Unblocked Plan
+
+### Unblocked Plan's official source code! Make a fork.
+
+
+### Created by Brady Trudel (BtPlayzX)
