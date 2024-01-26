@@ -5,7 +5,24 @@ h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+}
 p {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 3.2em;
+    text-decoration: none;
+    border: 3px solid whitesmoke;
+    max-width: 400px;
+    margin: auto;
 }
