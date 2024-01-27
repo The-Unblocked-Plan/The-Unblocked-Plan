@@ -1,0 +1,35 @@
+iframe {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+#menuBTN {
+	position: absolute;
+	top: 0vh;
+	left: 19vw;
+	width: 3.5vw;
+	height: 3.5vw;
+	background: none;
+	border: none;
+	border-radius: 2px;
+	color: white;
+	font-size: 2vw;
+	opacity: 0.1;
+}
+#menuBTN:hover {
+	opacity: 1;
+}
+
+#menu{
+	display: none;
+	position: absolute;
+	top: 3.5vw;
+	left: 19vw;
+	background: white;
+	border: none;
+	border-radius: 2px;
+	padding: 2vw;
+}
