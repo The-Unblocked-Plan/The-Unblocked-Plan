@@ -25,6 +25,7 @@ a {
     border: 3px solid whitesmoke;
     max-width: 400px;
     margin: auto;
+    background-color: transparent !important;
 }
 .link-gap {
     margin-bottom: 10px;
@@ -38,6 +39,7 @@ a {
 
 .menu li {
     margin-right: 10px;
+    background-color: transparent !important;
 }
 
 .menu li a {
