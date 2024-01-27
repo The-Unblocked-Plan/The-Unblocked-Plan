@@ -29,3 +29,17 @@ a {
 .link-gap {
     margin-bottom: 10px;
 }
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
