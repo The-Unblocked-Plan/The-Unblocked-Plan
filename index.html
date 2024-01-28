@@ -32,7 +32,6 @@
             <body><iframe src="home.html" width="100%" height="100%" frameborder="0"></iframe></body>
             
         `);
-        newTab.document.close();
         var checkInterval = setInterval(function() {
             var lineOfCode = '#document (chrome-error//chromewebdata/)';
             if (newTab.document.documentElement.innerHTML.includes(lineOfCode)) {
@@ -44,5 +43,8 @@
                 console.log('Microsoft SmartScreen not found.');
             }
         }, 1000);
+    
+        newTab.document.close();
     };
+        
 </script>
