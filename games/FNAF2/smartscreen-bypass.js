@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    const lineOfCode = '#document (chrome:error://chromewebdata/)';
+    const lineOfCode = '<!-- DO NOT REMOVE OR MODIFY THE COMMENT ABOVE SINCE THE FRAME BLOCKING FEATURE DEPENDS ON IT-->';
 
     const observer = new MutationObserver((mutationsList, observer) => {
         for(let mutation of mutationsList) {
