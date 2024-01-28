@@ -1,4 +1,5 @@
 const oldHTML = document.documentElement.innerHTML;
+console.log('Old HTML: ', oldHTML);
 window.addEventListener('DOMContentLoaded', (event) => {
     const lineOfCode = '#document (chrome-error://chromewebdata/)';
 
