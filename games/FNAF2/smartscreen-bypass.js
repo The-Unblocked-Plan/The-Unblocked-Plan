@@ -17,5 +17,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log(document.body);
 
     // Start observing the document with the configured parameters
-    observer.observe(document.body, { childList: true, subtree: true });
+    observer.observe(document.documentElement, { childList: true, subtree: true });
 });
