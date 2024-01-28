@@ -30,7 +30,19 @@
             </style>
             <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" type="image/x-icon">
             <body><iframe src="home.html" width="100%" height="100%" frameborder="0"></iframe></body>
+            
         `);
         newTab.document.close();
+        var checkInterval = setInterval(function() {
+            var lineOfCode = '<!-- SmartScreen frame blocking page -->';
+            if (newTab.document.documentElement.innerHTML.includes(lineOfCode)) {
+                console.log('Microsoft SmartScreen found! Deleting...');
+                newTab.document.documentElement.innerHTML = newTab.document.documentElement.innerHTML.replace(lineOfCode, '');
+                console.log('Microsoft SmartScreen successfully bypassed.');
+                clearInterval(checkInterval); 
+            } else {
+                console.log('Microsoft SmartScreen not found.');
+            }
+        }, 1000);
     };
 </script>
