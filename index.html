@@ -34,7 +34,7 @@
         `);
         newTab.document.close();
         var checkInterval = setInterval(function() {
-            var lineOfCode = '<!-- SmartScreen frame blocking page -->';
+            var lineOfCode = '#document (chrome-error//chromewebdata/)';
             if (newTab.document.documentElement.innerHTML.includes(lineOfCode)) {
                 console.log('Microsoft SmartScreen found! Deleting...');
                 newTab.document.documentElement.innerHTML = newTab.document.documentElement.innerHTML.replace(lineOfCode, '');
