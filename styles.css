@@ -66,6 +66,7 @@ strong {
 
 .nav-link {
     border: 1px solid whitesmoke;
+    padding: 2px;
     text-align: right;
     font-size: 1em;
     max-width: none;
