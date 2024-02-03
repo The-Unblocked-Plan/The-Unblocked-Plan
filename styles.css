@@ -73,3 +73,33 @@ strong {
     color: white;
     margin-right: 10px;
 }
+
+.nav-link-1:hover {
+    border-color: wheat;
+    color: wheat;
+}
+
+.nav-link-2:hover {
+    border-color: rgb(255, 50, 0);
+    color: rgb(255, 50, 0);
+}
+
+.nav-link-3:hover {
+    border-color: yellow;
+    color: yellow;
+}
+
+.nav-link-4:hover {
+    border-color: rgb(0, 255, 0);
+    color: rgb(0, 255, 0);
+}
+
+.nav-link-5:hover {
+    border-color: lightblue;
+    color: lightblue;
+}
+
+.nav-link-6:hover {
+    border-color: purple;
+    color: purple;
+}
