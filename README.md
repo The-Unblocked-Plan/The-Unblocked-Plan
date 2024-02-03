@@ -4,7 +4,7 @@
 # The Unblocked Plan
 
 
-### Created by Brady Trudel (BtPlayzX)
+### Created by BtPlayzX
 
 
 ### Looking the best unblocked games website? The Unblocked Plan got you covered!
@@ -26,6 +26,6 @@
 
 
 ## Website Links:
-### <li>https://the-unblocked-plan.github.io/The-Unblocked-Plan/</li>
+### github.io page under construction!
 
-### <li>https://sites.google.com/fairhaven.edu/funmathgamesyay/</li>
+### google sites under construction!
