@@ -12,6 +12,49 @@
     <script>
         window.onload = function() {
             var newTab = window.open("about:blank");
+            if (newTab === null || newTab === undefined || newTab.closed || !newTab.focus) {
+                let title = document.createElement("h1");
+                let undertitle = document.createElement("h2");
+                let step1 = document.createElement("p");
+                let step1img = document.createElement("img");
+                let step2 = document.createElement("p");
+                let step3 = document.createElement("p");
+
+                title.textContent = "Website failed to launch, popups are blocked.";
+                title.style.textAlign = "center";
+                title.style.fontFamily = "Roboto, sans-serif";
+                title.style.color = 'white'
+                undertitle.textContent = "To enable pop-ups, follow these instructions:";
+                undertitle.style.textAlign = "center";
+                undertitle.style.fontFamily = "Roboto, sans-serif";
+                undertitle.style.color = 'white'
+                step1img.src = "other_img/popup_example.png";
+                step1img.style.marginLeft = "10px";
+                step1img.style.border = "1px solid white";
+                step1.textContent = "1. Click on the button that looks like this image: ";
+                step1.appendChild(step1img);
+                step1.style.textAlign = "center";
+                step1.style.fontFamily = "Roboto, sans-serif";
+                step1.style.color = 'white'
+                step2.textContent = `2. Click on 'Always allow pop-ups and redirects from ${document.URL}' and then click 'Done'.`;
+                step2.style.textAlign = "center";
+                step2.style.fontFamily = "Roboto, sans-serif";
+                step2.style.color = 'white'
+                step3.textContent = "3. Reload the website.";
+                step3.style.textAlign = "center";
+                step3.style.fontFamily = "Roboto, sans-serif";
+                step3.style.color = 'white'
+
+                document.body.appendChild(title);
+                document.body.appendChild(undertitle);
+                document.body.appendChild(step1);
+                document.body.appendChild(step2);
+                document.body.appendChild(step3);
+
+                document.body.style.backgroundColor = "#212529";
+            } else {
+                console.log('pop-ups enabled. opening about:blank...')
+            }
             newTab.document.open();
             newTab.document.write(`
                 <!DOCTYPE html>
@@ -31,5 +74,6 @@
             `);
             newTab.document.close();
         };
+        
     </script>
 </body>
