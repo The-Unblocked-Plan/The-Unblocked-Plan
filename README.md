@@ -18,7 +18,7 @@
 
 ### <li>Clean UI | A Clean UI (User Interface) helps make it easier to navigate on websites and get a good vibe about the website.</li>
 
-### <li>Fun Games | The Unblocked Plan has plenty of fun games for you and your friends to play. These games were added based off of current popularity of the game.</li>
+### <li>Fun Games | The Unblocked Plan has plenty of fun games for you and your friends to play. These games were added based off of current popularity of the game and how good they were.</li>
 
 ### <li>Freedom Searching | Freedom Searching can let you search anything without your queries appearing in your search history. When you search no websites or searches will be blocked.</li>
 
