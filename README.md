@@ -23,9 +23,3 @@
 ### <li>Freedom Searching | Free Searching can let you search anything without your queries appearing in your search history. When you search no websites or searches will be blocked.</li>
 
 ### <li>More Unblocked Websites | Unblocked Plan provides more unblocked games websites so if Unblocked Plan gets blocked, you can provide yourself with an arensal of unblocked websites.</li>
-
-
-## Website Links:
-### github.io page under construction!
-
-### google sites under construction!
