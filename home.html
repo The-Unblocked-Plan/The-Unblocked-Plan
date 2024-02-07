@@ -16,7 +16,7 @@
             <div class="links">
                 <a href="home.html" class="nav-link nav-link-1" style="border: 4px solid white;">Home</a>
                 <a href="games.html" class="nav-link nav-link-2">Games</a>
-                <a href="school-tools.html" class="nav-link nav-link-3">School Tools</a>
+                <a href="watch.html" class="nav-link nav-link-3">Watch</a>
                 <a href="apps.html" class="nav-link nav-link-4">Apps</a>
                 <a href="websites.html" class="nav-link nav-link-5">Unblocked Websites</a>
                 <a href="search.html" class="nav-link nav-link-6">Freedom Search</a>
@@ -24,11 +24,26 @@
         </div>
     </ul>
     <hr>
+    
     <h1><span style="color: white;">The </span> <span style="color: red;">Unblocked </span> <span style="color: white;">Plan</span></h1>
-    <strong><p style="color: azure;">Make your school life easier with this website. You can play games, open school apps and roam the web freely!</p></strong>
+    <strong><p style="color: azure;" id="line29">Welcome to The Unblocked Plan!</p></strong>
+    <script>
+        window.onload = function() {
+            let lines = ["Play lots of games! Just be sneaking about it.", "The best unblocked games website in the world!", "Fun Fact: This website doesn't appear in your history!", "Plenty of fun games here!", "Looking for the best unblocked website? Well, you came to the right place!", "Barely any lag on chromebooks!", "I have an Unblocked Plan!", "No ads!"]; // Replace with your lines
+            let p = document.getElementById("line29"); // Get the p tag
+        
+            setInterval(function() {
+                let randomLine = lines[Math.floor(Math.random() * lines.length)];
+                p.textContent = randomLine;
+            }, 2000);
+        }
+    </script>
+    
+
+    
 
     <a href="games.html" style="color: rgb(255, 50, 0)" class="link-gap">GAMES</a>
-    <a href="school-tools.html" style="color: yellow" class="link-gap">SCHOOL TOOLS</a>
+    <a href="school-tools.html" style="color: yellow" class="link-gap">WATCH</a>
     <a href="apps.html" style="color: rgb(0, 255, 0)" class="link-gap">APPS</a>
     <a href="websites.html" style="color: lightblue" class="link-gap">UNBLOCKED WEBSITES</a>
     <a href="search.html" style="color: purple">FREEDOM SEARCH</a>
