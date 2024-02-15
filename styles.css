@@ -1,5 +1,6 @@
 body {
     background-color: #212529;
+    overflow: hidden;
 }
 h1 {
     text-align: center;
@@ -22,10 +23,19 @@ a {
     font-weight: bold;
     font-size: 3.2em;
     text-decoration: none;
-    border: 3px solid whitesmoke;
+    border: 3px solid transparent;
     max-width: 400px;
     margin: auto;
     background-color: transparent !important;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
 }
 .link-gap {
     margin-bottom: 10px;
@@ -44,7 +54,23 @@ a {
 
 .menu li a {
     text-decoration: none;
+    border: 2px solid white;
 }
+
+.menu li a:hover {
+    border: 4px solid white;
+    border-image: linear-gradient(to bottom right, red 0%, orange 25%, yellow 50%, green 75%, blue 100%); border-image-slice: 1;
+}
+
+.menu li #undertext {
+    color: white;
+}
+
+a:hover {
+    animation: pulse 1s infinite alternate;
+}
+
+
 
 strong {
     font-family: 'Roboto', sans-serif;
@@ -77,29 +103,129 @@ strong {
 .nav-link-1:hover {
     border-color: wheat;
     color: wheat;
+    animation: none;
 }
 
 .nav-link-2:hover {
     border-color: rgb(255, 50, 0);
     color: rgb(255, 50, 0);
+    animation: none;
 }
 
 .nav-link-3:hover {
     border-color: yellow;
     color: yellow;
+    animation: none;
 }
 
 .nav-link-4:hover {
     border-color: rgb(0, 255, 0);
     color: rgb(0, 255, 0);
+    animation: none;
 }
 
 .nav-link-5:hover {
     border-color: lightblue;
     color: lightblue;
+    animation: none;
 }
 
 .nav-link-6:hover {
     border-color: purple;
     color: purple;
+    animation: none;
+}
+
+i {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h4 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+button {
+    font-size: 1em; 
+    padding: 2px; 
+    max-width: 100px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #212529;
+    border: 2px solid white;
+    font-weight: bold;
+    transform: translateY(-5px);
+}
+
+textarea {
+    border: 2px solid white;
+    background-color: #212529;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    width: 400px;
+    height: 15px;
+    font-weight: lighter;
+    resize: none;
+}
+
+#iframe-nonfullscreen {
+    border-image: linear-gradient(to bottom right, red 0%, orange 25%, yellow 50%, green 75%, blue 100%); border-image-slice: 1;
+}
+
+.star {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-color: gold; /* Or use an image */
+    clip-path: polygon(
+      50% 0%,
+      61.8% 38.2%,
+      100% 38.2%,
+      69.1% 61.8%,
+      80.9% 100%,
+      50% 76.4%,
+      19.1% 100%,
+      30.9% 61.8%,
+      0% 38.2%,
+      38.2% 38.2%
+    ); /* Star shape */
+    animation: slideAcross 10s linear infinite;
+    
+}
+
+@keyframes slideAcross {
+    from {
+        transform: translate(0%, 0%);
+    }
+    to {
+        transform: translate(-5000%, 5000%);
+    }
+}
+
+#backuplinkslink {
+    color: rgb(255, 50, 0);
+    font-size: medium;
+    transform: translateY(30px);
+    border: 4px solid darkred;
+}
+
+#backuplinkslink:hover {
+    animation: none;
+    color:rgb(0, 255, 0);
+    border-image: linear-gradient(to bottom right, red 0%, orange 25%, yellow 50%, green 75%, blue 100%); border-image-slice: 1;
+}
+
+#backuplink {
+    color: rgb(255, 50, 0);
+    border: 4px solid darkred;
+}
+
+#backuplink:hover {
+    color: whitesmoke;
+    border-image: linear-gradient(to bottom right, red 0%, orange 25%, yellow 50%, green 75%, blue 100%); border-image-slice: 1;
 }

@@ -19,8 +19,12 @@
                 let step1img = document.createElement("img");
                 let step2 = document.createElement("p");
                 let step3 = document.createElement("p");
+                let title2 = document.createElement("h2");
+                let wrpopups = document.createElement("p");
+                let title3 = document.createElement("h2");
+                let whypopup = document.createElement("p");
 
-                title.textContent = "Website failed to launch, popups are blocked.";
+                title.textContent = "Website failed to launch, pop-ups are blocked.";
                 title.style.textAlign = "center";
                 title.style.fontFamily = "Roboto, sans-serif";
                 title.style.color = 'white'
@@ -33,9 +37,9 @@
                 step1img.style.border = "1px solid white";
                 step1.textContent = "1. Click on the button that looks like this image: ";
                 step1.appendChild(step1img);
+                step1.style.color = 'white'
                 step1.style.textAlign = "center";
                 step1.style.fontFamily = "Roboto, sans-serif";
-                step1.style.color = 'white'
                 step2.textContent = `2. Click on 'Always allow pop-ups and redirects from ${document.URL}' and then click 'Done'.`;
                 step2.style.textAlign = "center";
                 step2.style.fontFamily = "Roboto, sans-serif";
@@ -44,12 +48,32 @@
                 step3.style.textAlign = "center";
                 step3.style.fontFamily = "Roboto, sans-serif";
                 step3.style.color = 'white'
+                title2.textContent = 'What are pop-ups?'
+                title2.style.color = 'white';
+                title2.style.textAlign = "center";
+                title2.style.fontFamily = "Roboto, sans-serif";
+                wrpopups.textContent = 'Pop-ups allow new tabs to be opened without user input.'
+                wrpopups.style.color = 'white';
+                wrpopups.style.textAlign = "center";
+                wrpopups.style.fontFamily = "Roboto, sans-serif";
+                title3.textContent = 'What does this website need pop-ups?'
+                title3.style.color = 'white';
+                title3.style.textAlign = "center";
+                title3.style.fontFamily = "Roboto, sans-serif";
+                whypopup.textContent = 'Pop-ups are required on this website to open a special tab to make it so that this website doesn\'t appear in the history.'
+                whypopup.style.color = 'white';
+                whypopup.style.textAlign = "center";
+                whypopup.style.fontFamily = "Roboto, sans-serif";
 
                 document.body.appendChild(title);
                 document.body.appendChild(undertitle);
                 document.body.appendChild(step1);
                 document.body.appendChild(step2);
                 document.body.appendChild(step3);
+                document.body.appendChild(title2);
+                document.body.appendChild(wrpopups);
+                document.body.appendChild(title3);
+                document.body.appendChild(whypopup);
 
                 document.body.style.backgroundColor = "#212529";
             } else {
@@ -68,9 +92,25 @@
                     body {
                         background-color: #212529;
                     }
+                    
+                    ::-webkit-scrollbar {
+                        height: 12px;
+                        width: 12px;
+                        background: grey;
+                    }
+
+                    ::-webkit-scrollbar-thumb {
+                        background: linear-gradient(to bottom right, red 0%, orange 25%, yellow 50%, green 75%, blue 100%);
+                        border-radius: 1ex;
+                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+                    }
+
+                    ::-webkit-scrollbar-corner {
+                        background: white;
+                    }
                 </style>
                 <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" type="image/x-icon">
-                <iframe src="home.html" width="100%" height="1000px" frameborder="0"></iframe>
+                <iframe src="home.html" width="100%" height="2800px" frameborder="0"></iframe>
             `);
             newTab.document.close();
         };
