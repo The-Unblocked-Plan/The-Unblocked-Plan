@@ -25,9 +25,12 @@
     </ul>
     <hr>
     
-    <h1><span style="color: white;">The </span> <span style="color: red;">Unblocked </span> <span style="color: white;">Plan</span></h1>
+    <h1><span style="color: white;" class="mist-effect">The </span> <span style="color: red;" class="fire-effect">Unblocked </span> <span style="color: white;" class="mist-effect">Plan</span></h1>
     <strong><p style="color: azure;" id="line29">Welcome to The Unblocked Plan!</p></strong>
     <script>
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        }
         window.onload = function() {
             let lines = ["Play lots of games! Just be sneaking about it.", "The best unblocked games website in the world!", "Fun Fact: This website doesn't appear in your history!", "Plenty of fun games here!", "Looking for the best unblocked website? Well, you came to the right place!", "Barely any lag on chromebooks!", "I have an Unblocked Plan!", "No ads!"]; // Replace with your lines
             let p = document.getElementById("line29"); // Get the p tag
