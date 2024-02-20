@@ -9,6 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png" type="image/x-icon"></head>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data === 'init') {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function() {
+                window.parent.postMessage('scrollToTop', '*');
+                });
+            }
+            }
+        });
+        window.parent.postMessage('init', '*');
+    </script>
 </head>
 <body>
     <ul>

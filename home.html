@@ -42,6 +42,19 @@
                 p.textContent = randomLine;
             }, 2000);
         }
+        window.addEventListener('message', function(event) {
+            if (event.data === 'init') {
+            var links = document.getElementsByTagName('a');
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener('click', function() {
+                window.parent.postMessage('scrollToTop', '*');
+                });
+            }
+            }
+        });
+        window.parent.postMessage('init', '*');
+        
+            
     </script>
     <div class="star"></div>
     
@@ -49,7 +62,7 @@
     
 
     <a href="games.html" style="color: rgb(255, 50, 0); border-image: linear-gradient(to bottom right, red 0%, rgb(255, 111, 0) 25%, red 50%, orange 75%, red 100%); border-image-slice: 1;" class="link-gap">GAMES</a>
-    <a href="school-tools.html" style="color: yellow; border-image: linear-gradient(to bottom right, yellow 0%, orange 25%, yellow 50%, orange 75%, yellow 100%); border-image-slice: 1;" class="link-gap">WATCH</a>
+    <a href="watch.html" style="color: yellow; border-image: linear-gradient(to bottom right, yellow 0%, orange 25%, yellow 50%, orange 75%, yellow 100%); border-image-slice: 1;" class="link-gap">WATCH</a>
     <a href="apps.html" style="color: rgb(0, 255, 0); border-image: linear-gradient(to bottom right, lightgreen 0%, lightgreen 25%, green 50%, green 75%, yellowgreen 100%); border-image-slice: 1;" class="link-gap">APPS</a>
     <a href="websites.html" style="color: lightblue; border-image: linear-gradient(to bottom right, lightblue 0%, lightskyblue 25%, blue 50%, lightblue 75%, lightskyblue 100%); border-image-slice: 1;" class="link-gap">UNBLOCKED WEBSITES</a>
     <a href="unblocker.html" style="color: purple; border-image: linear-gradient(to bottom right, purple 0%, pink 25%, purple 50%, pink 75%, purple 100%); border-image-slice: 1;">UNBLOCKER</a>
