@@ -260,3 +260,11 @@ textarea {
     color: #fff;
     text-shadow: 0 0 5px #ccc, 0 0 10px #ccc, 0 0 15px #ccc, 0 0 20px #ccc, 0 0 30px #ccc, 0 0 40px #ccc;
 }
+
+.rainbow-red { color: red; }
+.rainbow-orange { color: orange; }
+.rainbow-yellow { color: yellow; }
+.rainbow-green { color: green; }
+.rainbow-blue { color: blue; }
+.rainbow-indigo { color: indigo; }
+.rainbow-violet { color: violet; }

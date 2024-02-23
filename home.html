@@ -29,6 +29,7 @@
     
     <h1><span style="color: white;" class="mist-effect">The </span> <span style="color: red;" class="fire-effect">Unblocked </span> <span style="color: white;" class="mist-effect">Plan</span></h1>
     <strong><p style="color: azure;" id="line29">Welcome to The Unblocked Plan!</p></strong>
+    <h1 id="lessupdates">This project will receive less updates, I am working on a website better than this :) it will take a few weeks though.</h1>
     <script>
         window.onbeforeunload = function () {
             window.scrollTo(0, 0);
@@ -54,7 +55,16 @@
         });
         window.parent.postMessage('init', '*');
         
-            
+        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+        var index = 0;
+
+        function changeColor() {
+        var text = document.getElementById('lessupdates');
+        text.className = 'rainbow-' + colors[index];
+        index = (index + 1) % colors.length;
+        }
+
+        setInterval(changeColor, 300);
     </script>
     <div class="star"></div>
     
